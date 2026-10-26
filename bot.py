@@ -23,7 +23,7 @@ class HealthCheckHandler(BaseHTTPRequestHandler):
         self.wfile.write(b"Bot activo y funcionando 24/7")
 
 def run_health_check_server():
-    port = int(os.environ.get("PORT", 8080))
+    port = int(os.environ.get("PORT", 3000))
     server = HTTPServer(('0.0.0.0', port), HealthCheckHandler)
     logging.info(f"Servidor HTTP escuchando en el puerto {port}")
     server.serve_forever()
