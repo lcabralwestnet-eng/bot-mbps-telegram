@@ -1,4 +1,3 @@
-[credentials.json](https://github.com/user-attachments/files/33981387/credentials.json)
 {
   "type": "service_account",
   "project_id": "equipos-y-cobertura-de-routers",
